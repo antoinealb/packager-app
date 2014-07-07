@@ -1,0 +1,4 @@
+depends:
+    - state-machine
+
+test-runner: application.c
