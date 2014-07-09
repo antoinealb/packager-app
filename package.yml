@@ -1,4 +1,8 @@
 depends:
     - state-machine
 
-test-runner: application.c
+target.x86:
+    - application.c
+
+templates:
+    Makefile.jinja: Makefile
