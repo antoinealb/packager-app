@@ -4,7 +4,7 @@
 void state1(state_machine_t *machine);
 void state2(state_machine_t *machine);
 
-void main(void)
+int main(void)
 {
     state_machine_t *machine;
     machine = state_machine_create();
@@ -15,6 +15,8 @@ void main(void)
     }
 
     state_machine_delete(machine);
+
+    return 0;
 }
 
 void state1(state_machine_t *machine)
